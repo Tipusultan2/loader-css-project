@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading Project</title>
+	 <style>
+	 	body {
+	 		background: #3498bd;
+	 		color: #fff;
+	 	}
+	 	h3.loading {
+	 		font-size: 3em;
+	 		font-weight: 400;
+	 	}
+	 	span[class^='dot-'] {
+	 		opacity: 0;
+	 	}
+	 	.dot-one {
+	 		animation: dot-one 2S infinite linear;
+	 	}
+	 	.dot-two {
+	 		animation: dot-two 2S infinite linear;
+	 	}
+	 	.dot-three {
+	 		animation: dot-three 2S infinite linear;
+	 	}
+	 	@keyframes dot-one {
+	 		0% {
+	 			opacity: 0
+	 		}
+	 		15% {
+	 			opacity: 0;
+	 		}
+	 		25% {
+	 			opacity: 1;
+	 		}
+	 		100% {
+	 			opacity: 1;
+	 		}
+	 	}
+	 	@keyframes dot-two {
+	 		0% {
+	 			opacity: 0;
+	 		}
+	 		40% {
+	 			opacity: 0;
+	 		}
+	 		50% {
+	 			opacity: 1;
+	 		}
+	 		100% {
+	 			opacity: 1;
+	 		}
+	 	}
+	 	@keyframes dot-three {
+	 		0% {
+	 			opacity: 0;
+	 		}
+	 		50% {
+	 			opacity: 0;
+	 		}
+	 		75% {
+	 			opacity: 0;
+	 		}
+	 		100% {
+	 			opacity: 1;
+	 		}
+	 	}
+	 </style>
+</head>
+<body>
+    <div>
+    	<h3 class="loading">Loading<span class="dot-one">.</span><span class="dot-two">.</span><span class="dot-three">.</span></h3>
+    </div>
+</body>
+</html>
